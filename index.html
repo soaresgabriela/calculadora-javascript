@@ -2,7 +2,8 @@
 	<head>
 		<title>Calculadora</title>
 
-		<!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <style>
@@ -92,32 +93,8 @@
         </div>
       </div>
     </div> 
-    <script>
-      function calcular(tipo, valor){
-        if (tipo ==='acao') {
-          if(valor === 'c'){
-            //limpar o visor (id resultado)
-            document.getElementById('resultado').value = '';
-          }
-          if( valor ==='+' || valor === '-' || valor ==='*' || valor ==='/' || valor === '.'){
-
-            document.getElementById('resultado').value += valor;
-
-          }
-          if(valor === '='){
-            var valor_campo = eval(document.getElementById('resultado').value);
-            document.getElementById('resultado').value = valor_campo;
-            
-          }
-
-        }else if (tipo === 'valor') {
-         
-          document.getElementById('resultado').value += valor;
-
-        }
-
-      }
-    </script>   
+    <script src="js/script.js"></script>
+  
   </body>	
 
 </html>
